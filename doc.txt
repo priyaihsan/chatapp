@@ -1,0 +1,55 @@
+pusher, laravel-echo , breeze
+
+
+composer require laravel/breeze --dev
+php artisan breeze:install blade
+php artisan breeze:install --dark
+php artisan migrate
+composer require pusher/pusher-php-server
+npm install --save-dev laravel-echo pusher-js
+
+php artisan make:event MessageCreate
+
+// add scripts tp watch folder bootstrap.js
+
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build",
+        "watch": "vite build --watch"
+    },
+
+@vite('resources/js/app.js')
+
+
+ada 4 tabel
+
+users
+- id
+- name
+- email
+- password
+- avatar
+- create_at
+- update_at
+
+conversation
+- id
+- name
+- create_at
+- update_at
+
+partisipants
+- id
+- user_id
+- conversation_id
+- create_at
+- update_at
+
+message
+- id
+- content
+- user_id
+- create_at
+- update_at
+
+
