@@ -52,4 +52,10 @@ message
 - create_at
 - update_at
 
+php artisan make:model Conversation -mfsc
+php artisan make:model Partisipants -mfsc
+php artisan make:model Message -mfsc
+
+php artisan make:seeder UsersSeeder
+
 
